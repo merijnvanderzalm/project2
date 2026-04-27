@@ -427,6 +427,11 @@
   const chatBody    = document.getElementById('chatBody');
   const chatSent    = document.getElementById('chatSent');
 
+  supportBtn.addEventListener('mouseenter', () => {
+    supportChat.classList.add('open');
+    chatInput.focus();
+  });
+
   supportBtn.addEventListener('click', () => {
     supportChat.classList.toggle('open');
     if (supportChat.classList.contains('open')) chatInput.focus();
